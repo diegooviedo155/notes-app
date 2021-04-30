@@ -1,7 +1,7 @@
 {
     "name": "mern-crud-notes",
     "version": "1.0.0",
-    "description": "",
+    "private": true,
     "scripts": {
         "dev": "nodemon src/index.js",
         "start": "node src/index.js"
