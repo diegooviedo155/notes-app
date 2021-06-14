@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 const { NOTES_APP_MONGODB_HOST, NOTES_APP_MONGODB_DATABASE } = process.env
-//${NOTES_APP_MONGODB_DATABASE||"notes-app"}`;
-const MONGODB_URI = `mongodb://${NOTES_APP_MONGODB_HOST || "localhost"}`;
+
+const MONGODB_URI = `mongodb://${NOTES_APP_MONGODB_HOST || "localhost"}/${NOTES_APP_MONGODB_DATABASE||"notes-app"}`;
 
 mongoose.connect(MONGODB_URI, {
         useNewUrlParser: true,
